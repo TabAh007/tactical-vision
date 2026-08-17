@@ -1,196 +1,182 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Sparkles, Shield } from 'lucide-react';
 
 export default function ContactSection() {
-  const [formState, setFormState] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    company: '',
+    stage: 'Concept Ideation',
     message: ''
   });
-  const [sent, setSent] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSent(true);
+    setSubmitted(true);
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#07090E] relative border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-[#07090E] relative border-t border-white/5">
+      <div className="site-container">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="tech-badge mb-3">
             <Mail className="w-3.5 h-3.5" />
-            <span>Get in Touch</span>
+            <span>Direct Engineering Desk</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
-            Let's Engineer Your Next <span className="text-gradient-accent">Breakthrough</span>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+            Let's Build Something <span className="text-gradient-accent">Dominant</span>
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            Whether you have a new patent idea, CAD assembly to optimize, or need factory mold tooling, our engineering team is ready.
+          <p className="text-slate-400 text-xs sm:text-sm">
+            Whether you have a rough sketch on a napkin or an existing CAD model ready for DFM optimization, let's connect.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+        {/* 2-Column Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-5xl mx-auto items-start">
           
-          {/* Left Info Column */}
-          <div className="lg:col-span-2 space-y-6">
-            <div className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10 space-y-6">
-              <h3 className="text-xl font-bold text-white font-mono">
-                Direct Contact Information
+          {/* Left: Contact Channels (5 Cols) */}
+          <div className="lg:col-span-5 space-y-4">
+            <div className="glass-panel p-5 rounded-xl border border-white/10 space-y-4 shadow-lg">
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider font-mono">
+                Direct Contact Points
               </h3>
 
-              <div className="space-y-4 text-sm">
+              <div className="space-y-3 text-xs font-mono">
                 <a 
                   href="tel:+994502010898"
-                  className="flex items-start gap-4 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] transition-colors border border-white/5 text-slate-200"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-[#00F59B]/10 border border-white/5 hover:border-[#00F59B]/30 transition-all text-slate-200"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[#00F59B]/10 text-[#00F59B] flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5" />
-                  </div>
+                  <Phone className="w-4 h-4 text-[#00F59B]" />
                   <div>
-                    <div className="text-xs text-slate-400 font-mono">Phone / WhatsApp</div>
-                    <div className="text-white font-bold">+994 50 201 0898</div>
+                    <div className="text-[10px] text-slate-500">Phone / WhatsApp</div>
+                    <div className="font-bold">+994 50 201 0898</div>
                   </div>
                 </a>
 
                 <a 
                   href="mailto:team@tactical-vision.com"
-                  className="flex items-start gap-4 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] transition-colors border border-white/5 text-slate-200"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-[#00F59B]/10 border border-white/5 hover:border-[#00F59B]/30 transition-all text-slate-200"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[#00D2FF]/10 text-[#00D2FF] flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5" />
-                  </div>
+                  <Mail className="w-4 h-4 text-[#00F59B]" />
                   <div>
-                    <div className="text-xs text-slate-400 font-mono">Official Email</div>
-                    <div className="text-white font-bold">team@tactical-vision.com</div>
+                    <div className="text-[10px] text-slate-500">Direct Email</div>
+                    <div className="font-bold">team@tactical-vision.com</div>
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-3 rounded-xl bg-white/[0.03] border border-white/5 text-slate-200">
-                  <div className="w-10 h-10 rounded-lg bg-white/5 text-[#00F59B] flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/5 text-slate-200">
+                  <MapPin className="w-4 h-4 text-[#00F59B]" />
                   <div>
-                    <div className="text-xs text-slate-400 font-mono">Global Headquarters</div>
-                    <div className="text-white font-bold">1963 A. Rajabli, Narimanov, AZ1008, Baku, Azerbaijan</div>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-3 rounded-xl bg-white/[0.03] border border-white/5 text-slate-200">
-                  <div className="w-10 h-10 rounded-lg bg-white/5 text-slate-400 flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-slate-400 font-mono">Operating Hours</div>
-                    <div className="text-slate-200">Mon – Fri: 09:00 – 18:00 (GMT+4)</div>
+                    <div className="text-[10px] text-slate-500">Global Headquarters</div>
+                    <div className="font-bold">Baku, Azerbaijan</div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="pt-2">
-                <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
-                  <ShieldCheck className="w-4 h-4 text-[#00F59B]" />
-                  <span>Confidentiality & NDA guaranteed</span>
-                </div>
-              </div>
+            {/* NDA Guarantee */}
+            <div className="p-4 rounded-xl bg-[#00F59B]/5 border border-[#00F59B]/20 flex items-center gap-3 text-xs font-mono text-slate-300">
+              <Shield className="w-5 h-5 text-[#00F59B] shrink-0" />
+              <span>We sign standard mutual NDAs before reviewing any patent diagrams or confidential IP.</span>
             </div>
           </div>
 
-          {/* Right Form Column */}
-          <div className="lg:col-span-3">
-            <div className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10">
-              {sent ? (
-                <div className="text-center py-12 space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-[#00F59B]/20 border border-[#00F59B] text-[#00F59B] flex items-center justify-center mx-auto shadow-lg shadow-[#00F59B]/20">
-                    <CheckCircle2 className="w-8 h-8" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Message Sent Successfully!</h3>
-                  <p className="text-sm text-slate-300 max-w-md mx-auto">
-                    Thank you, <strong>{formState.name}</strong>. Your message has been routed to our project engineering desk. We will respond within 24 business hours.
-                  </p>
-                  <button
-                    onClick={() => {
-                      setSent(false);
-                      setFormState({ name: '', email: '', phone: '', message: '' });
-                    }}
-                    className="btn-secondary text-xs py-2 px-6 mt-4"
-                  >
-                    Send Another Note
-                  </button>
+          {/* Right: Message Form (7 Cols) */}
+          <div className="lg:col-span-7 glass-panel p-6 rounded-xl border border-white/10 shadow-2xl">
+            {submitted ? (
+              <div className="text-center py-10 space-y-3">
+                <div className="w-12 h-12 rounded-full bg-[#00F59B]/10 text-[#00F59B] flex items-center justify-center mx-auto border border-[#00F59B]/30">
+                  <CheckCircle2 className="w-6 h-6" />
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <h3 className="text-xl font-bold text-white font-mono mb-2">
-                    Send Us a Project Inquiry
-                  </h3>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-mono text-slate-400 mb-1">Full Name *</label>
-                      <input
-                        type="text"
-                        required
-                        placeholder="John Doe"
-                        value={formState.name}
-                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#00F59B]"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-mono text-slate-400 mb-1">Email Address *</label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="john@company.com"
-                        value={formState.email}
-                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#00F59B]"
-                      />
-                    </div>
-                  </div>
-
+                <h4 className="text-lg font-bold text-white">Inquiry Received</h4>
+                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                  Thank you! An engineering project lead will review your requirements and respond within 24 hours.
+                </p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="btn-secondary text-xs py-1.5 px-4 mt-2"
+                >
+                  Send Another Note
+                </button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4 text-xs font-mono">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-mono text-slate-400 mb-1">Phone / WhatsApp (Optional)</label>
+                    <label className="text-slate-400 block mb-1">Your Name *</label>
                     <input
-                      type="tel"
-                      placeholder="+1 (555) 000-0000"
-                      value={formState.phone}
-                      onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#00F59B]"
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="e.g. Alex Miller"
+                      className="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-[#00F59B]"
                     />
                   </div>
-
                   <div>
-                    <label className="block text-xs font-mono text-slate-400 mb-1">Project Details / Message *</label>
-                    <textarea
+                    <label className="text-slate-400 block mb-1">Email Address *</label>
+                    <input
+                      type="email"
                       required
-                      rows={5}
-                      placeholder="Tell us about your product idea, existing CAD files, target timelines, or manufacturing requirements..."
-                      value={formState.message}
-                      onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#00F59B]"
-                    ></textarea>
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="alex@company.com"
+                      className="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-[#00F59B]"
+                    />
                   </div>
+                </div>
 
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-[11px] font-mono text-slate-400">
-                      * All submissions protected by standard NDA
-                    </span>
-                    <button
-                      type="submit"
-                      className="btn-primary text-xs py-3 px-8"
-                    >
-                      <Send className="w-3.5 h-3.5" />
-                      <span>Send Direct Message</span>
-                    </button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="text-slate-400 block mb-1">Company / Project Name</label>
+                    <input
+                      type="text"
+                      value={formData.company}
+                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      placeholder="e.g. Apex Optics Inc"
+                      className="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-[#00F59B]"
+                    />
                   </div>
-                </form>
-              )}
-            </div>
+                  <div>
+                    <label className="text-slate-400 block mb-1">Current Stage</label>
+                    <select
+                      value={formData.stage}
+                      onChange={(e) => setFormData({ ...formData, stage: e.target.value })}
+                      className="w-full px-3 py-2 rounded-lg bg-[#0D121E] border border-white/10 text-white focus:outline-none focus:border-[#00F59B]"
+                    >
+                      <option>Concept Ideation</option>
+                      <option>Industrial Design Phase</option>
+                      <option>Mechanical CAD Modeling</option>
+                      <option>DFM & Prototyping</option>
+                      <option>Tooling & Mass Production</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="text-slate-400 block mb-1">Project Brief / Scope *</label>
+                  <textarea
+                    rows={4}
+                    required
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    placeholder="Tell us about the product, timeline targets, materials, and quantities..."
+                    className="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-[#00F59B]"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="btn-primary w-full py-2.5 text-xs font-bold font-mono tracking-wide"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                  <span>Send Confidential Engineering Brief</span>
+                </button>
+              </form>
+            )}
           </div>
 
         </div>

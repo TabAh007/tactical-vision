@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, ArrowUp, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Sparkles, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer({ onOpenEstimator }) {
   const scrollToTop = () => {
@@ -7,94 +7,65 @@ export default function Footer({ onOpenEstimator }) {
   };
 
   return (
-    <footer className="bg-[#05070B] border-t border-white/10 pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#04060A] border-t border-white/10 text-slate-400 text-xs font-mono py-12">
+      <div className="site-container space-y-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        {/* Top Row */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
           
-          {/* Brand Info */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#00F59B] to-[#00D2FF] p-0.5 flex items-center justify-center">
-                <div className="w-full h-full bg-[#07090E] rounded-[6px] flex items-center justify-center">
-                  <Shield className="w-4 h-4 text-[#00F59B]" />
+          {/* Brand */}
+          <div className="space-y-3 md:col-span-2">
+            <div className="flex items-center gap-2">
+              <div 
+                style={{ width: '32px', height: '32px' }}
+                className="rounded-lg bg-gradient-to-br from-[#00F59B] to-[#00D2FF] p-0.5 flex items-center justify-center"
+              >
+                <div className="w-full h-full bg-[#07090E] rounded-[6px] flex items-center justify-center p-1">
+                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
                 </div>
               </div>
-              <div className="text-lg font-bold tracking-wider font-mono-tech">
+              <span className="text-base font-bold text-white tracking-wider font-mono">
                 TACTICAL <span className="text-[#00F59B]">VISION</span>
-              </div>
+              </span>
             </div>
-
-            <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              Tactical Vision is an international product development &amp; mechanical engineering firm specializing in defence, marine, optics, and consumer hardware solutions.
+            <p className="text-xs text-slate-400 max-w-md leading-relaxed">
+              Global turnkey product development, mechanical engineering, CAD modeling, reverse engineering, and factory tooling production.
             </p>
-
-            <div className="pt-2 text-xs font-mono text-slate-400 space-y-1">
-              <div>📍 1963 A. Rajabli, Baku, AZ1008</div>
-              <div>✉️ team@tactical-vision.com</div>
-              <div>📞 +994 50 201 0898</div>
-            </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-xs font-mono uppercase tracking-wider text-white font-bold mb-4">
-              Navigation
-            </h4>
-            <ul className="space-y-2 text-xs text-slate-400">
-              <li><a href="#portfolio" className="hover:text-[#00F59B] transition-colors">Portfolio Showcase</a></li>
-              <li><a href="#services" className="hover:text-[#00F59B] transition-colors">Engineering Services</a></li>
-              <li><a href="#process" className="hover:text-[#00F59B] transition-colors">Development Roadmap</a></li>
-              <li><a href="#about" className="hover:text-[#00F59B] transition-colors">About Our Team</a></li>
-              <li><a href="#contact" className="hover:text-[#00F59B] transition-colors">Contact Engineering Desk</a></li>
+          <div className="space-y-2">
+            <div className="text-xs font-bold text-white uppercase tracking-wider mb-2">Navigation</div>
+            <ul className="space-y-1.5">
+              <li><a href="#3d-lab" className="hover:text-[#00F59B] transition-colors">3D CAD Lab</a></li>
+              <li><a href="#portfolio" className="hover:text-[#00F59B] transition-colors">Portfolio Case Studies</a></li>
+              <li><a href="#cad-reality" className="hover:text-[#00F59B] transition-colors">CAD vs. Reality</a></li>
+              <li><a href="#services" className="hover:text-[#00F59B] transition-colors">Capabilities & Services</a></li>
+              <li><a href="#process" className="hover:text-[#00F59B] transition-colors">4-Phase Roadmap</a></li>
             </ul>
           </div>
 
-          {/* Services Links */}
-          <div>
-            <h4 className="text-xs font-mono uppercase tracking-wider text-white font-bold mb-4">
-              Core Capabilities
-            </h4>
-            <ul className="space-y-2 text-xs text-slate-400">
-              <li><span className="hover:text-slate-200">Industrial Design (ID)</span></li>
-              <li><span className="hover:text-slate-200">Mechanical Engineering</span></li>
-              <li><span className="hover:text-slate-200">Finite Element Analysis (FEA)</span></li>
-              <li><span className="hover:text-slate-200">Reverse Engineering & 3D Scan</span></li>
-              <li><span className="hover:text-slate-200">Rapid CNC & 3D Prototyping</span></li>
-              <li><span className="hover:text-slate-200">Injection Mold Tooling</span></li>
-            </ul>
-          </div>
-
-          {/* Consultation CTA */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-white font-bold mb-2">
-              Start a Project
-            </h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Book a zero-cost technical evaluation with a senior engineer.
-            </p>
-            <button
-              onClick={onOpenEstimator}
-              className="btn-primary w-full text-xs py-2.5"
-            >
-              <span>Get Free Consultation</span>
-            </button>
+          {/* Contact Direct */}
+          <div className="space-y-2">
+            <div className="text-xs font-bold text-white uppercase tracking-wider mb-2">Global HQ</div>
+            <p className="text-slate-400">Baku, Azerbaijan</p>
+            <p className="text-slate-300 font-bold">+994 50 201 0898</p>
+            <p className="text-[#00F59B]">team@tactical-vision.com</p>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+        {/* Bottom Row */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Tactical Vision. All rights reserved. Formerly on tactical-vision.com.
+            &copy; {new Date().getFullYear()} Tactical Vision. All rights reserved. Precision Turnkey Engineering.
           </div>
-          
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors"
+            className="flex items-center gap-1.5 text-slate-400 hover:text-[#00F59B] transition-colors cursor-pointer"
           >
-            <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5 text-[#00F59B]" />
+            <span>Back to Top</span>
+            <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
 

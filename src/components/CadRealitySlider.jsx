@@ -36,28 +36,28 @@ const comparisonData = [
 
 export default function CadRealitySlider() {
   const [activeItem, setActiveItem] = useState(comparisonData[0]);
-  const [sliderPos, setSliderPos] = useState(50); // percentage 0 - 100
+  const [sliderPos, setSliderPos] = useState(50);
 
   return (
-    <section className="py-24 bg-[#07090E] relative border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-[#07090E] relative border-t border-white/5">
+      <div className="site-container">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="tech-badge mb-3">
             <SlidersHorizontal className="w-3.5 h-3.5" />
             <span>Interactive CAD vs. Reality Comparison</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
             From Digital Blueprint to <span className="text-gradient-accent">Physical Production</span>
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
+          <p className="text-slate-400 text-xs sm:text-sm">
             Drag the interactive slider below to compare our raw parametric 3D CAD assemblies directly against the final mass-manufactured hardware.
           </p>
         </div>
 
         {/* Project Selector Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           {comparisonData.map((item) => (
             <button
               key={item.id}
@@ -65,9 +65,9 @@ export default function CadRealitySlider() {
                 setActiveItem(item);
                 setSliderPos(50);
               }}
-              className={`px-5 py-2.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
+              className={`px-4 py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${
                 activeItem.id === item.id
-                  ? 'bg-[#00F59B] text-black shadow-lg shadow-[#00F59B]/20 scale-102'
+                  ? 'bg-[#00F59B] text-black shadow-md shadow-[#00F59B]/20'
                   : 'bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/10'
               }`}
             >
@@ -78,7 +78,7 @@ export default function CadRealitySlider() {
 
         {/* Interactive Comparison Split Box */}
         <div className="max-w-4xl mx-auto">
-          <div className="glass-panel rounded-2xl overflow-hidden border border-white/15 shadow-2xl p-4 sm:p-6 space-y-4">
+          <div className="glass-panel rounded-2xl overflow-hidden border border-white/15 shadow-2xl p-4 sm:p-5 space-y-3">
             
             {/* Split Image Canvas */}
             <div 
@@ -101,7 +101,7 @@ export default function CadRealitySlider() {
                 alt="Reality"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute top-4 right-4 bg-black/75 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-mono text-white border border-white/10 pointer-events-none">
+              <div className="absolute top-3 right-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-mono text-white border border-white/10 pointer-events-none">
                 {activeItem.realityLabel}
               </div>
 
@@ -116,7 +116,7 @@ export default function CadRealitySlider() {
                   className="absolute inset-0 w-full h-full object-cover max-w-none"
                   style={{ width: '100%', height: '100%' }}
                 />
-                <div className="absolute top-4 left-4 bg-black/75 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-mono text-[#00F59B] border border-[#00F59B]/30 pointer-events-none">
+                <div className="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-mono text-[#00F59B] border border-[#00F59B]/30 pointer-events-none">
                   {activeItem.cadLabel}
                 </div>
               </div>
@@ -126,24 +126,24 @@ export default function CadRealitySlider() {
                 className="absolute top-0 bottom-0 w-0.5 bg-[#00F59B] pointer-events-none flex items-center justify-center"
                 style={{ left: `${sliderPos}%` }}
               >
-                <div className="w-9 h-9 rounded-full bg-[#00F59B] text-black font-bold flex items-center justify-center shadow-lg shadow-black/80 -ml-4.5 scale-90 sm:scale-100">
-                  <SlidersHorizontal className="w-4 h-4" />
+                <div className="w-8 h-8 rounded-full bg-[#00F59B] text-black font-bold flex items-center justify-center shadow-lg shadow-black/80 -ml-4 scale-90 sm:scale-100">
+                  <SlidersHorizontal className="w-3.5 h-3.5" />
                 </div>
               </div>
 
               {/* Bottom Touch Hint */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 pointer-events-none bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-[10px] font-mono text-slate-300">
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 pointer-events-none bg-black/60 backdrop-blur-md px-3 py-0.5 rounded-full border border-white/10 text-[9px] font-mono text-slate-300">
                 &larr; Drag Slider Across &rarr;
               </div>
             </div>
 
             {/* Engineering Highlight Note */}
-            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono">
+            <div className="p-3 rounded-xl bg-white/[0.03] border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-mono">
               <div className="flex items-center gap-2 text-slate-200">
-                <CheckCircle2 className="w-4 h-4 text-[#00F59B] shrink-0" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#00F59B] shrink-0" />
                 <span><strong>Engineering Execution:</strong> {activeItem.engineeringHighlight}</span>
               </div>
-              <span className="text-[#00F59B] shrink-0 font-bold">100% CAD Fidelity</span>
+              <span className="text-[#00F59B] shrink-0 font-bold text-[11px]">100% CAD Fidelity</span>
             </div>
 
           </div>
