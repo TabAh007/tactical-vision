@@ -1,0 +1,183 @@
+[
+  {
+    "id": "bushnell-trophy-cam",
+    "title": "Bushnell Trophy Cam",
+    "client": "Bushnell",
+    "category": "Outdoor & Scouting Electronics",
+    "tagline": "Introducing a Decade of Excellence: The Unrivaled Bushnell Trail Camera",
+    "description": "Engineered for harsh outdoor environments, integrating low-power passive infrared (PIR) motion sensing, invisible night-vision IR illumination, and an IP67 weather-resistant enclosure.",
+    "coverImage": "https://assets.zyrosite.com/bushnell-trophy-cam-Y4LOOj5PlDiWKj8X.jpg",
+    "tags": ["Industrial Design", "Mechanical Engineering", "Tooling & DFM", "IP67 Enclosure"],
+    "highlights": [
+      "Rugged weather-sealed overmolded casing",
+      "Sub-second PIR motion trigger architecture",
+      "Night-vision infrared LED lens integration",
+      "Tree-strap & security lock cable pass-throughs"
+    ]
+  },
+  {
+    "id": "simmons-volt-600",
+    "title": "Simmons Volt 600 Laser Range Finder",
+    "client": "Simmons Optics",
+    "category": "Optical & Laser Instruments",
+    "tagline": "Ultra-Compact, High-Precision Distance Acquisition",
+    "description": "Designed with a compact vertical form factor and high-traction ergonomic grip, providing instant ±1 yard distance readings up to 600 yards with single-button actuation.",
+    "coverImage": "https://assets.zyrosite.com/product_rangefinder_801601-AVL31bxPvyFybVxB.jpg",
+    "tags": ["Opto-Mechanics", "Industrial Design", "Ergonomics", "High-Volume Production"],
+    "highlights": [
+      "Single-button intuitive operation",
+      "High-contrast LCD optical HUD overlay",
+      "Impact-resistant rubberized shell",
+      "Precision optical barrel alignment"
+    ]
+  },
+  {
+    "id": "seven-marine",
+    "title": "Seven Marine 557 / 627 HP Outboard",
+    "client": "Seven Marine",
+    "category": "High-Performance Marine Engineering",
+    "tagline": "Revolutionizing the Outboard Boat Engine Industry",
+    "description": "Co-engineered the world's highest horsepower outboard marine engines, packaging a supercharged 6.2L V8 powerhead under a lightweight, hydrodynamic composite cowl.",
+    "coverImage": "https://assets.zyrosite.com/seven-6-YBglQNwbzGuL7Q97.jpg",
+    "tags": ["Marine Engineering", "Composite Cowling", "Hydrodynamics", "Thermal Analysis"],
+    "highlights": [
+      "Integrated closed-loop heat exchanger system",
+      "Aerodynamic lightweight composite cowl structure",
+      "Twin-pinion transmission packaging",
+      "Marine-grade corrosion protection & seal geometry"
+    ]
+  },
+  {
+    "id": "primos-proof-cam",
+    "title": "Primos Proof Cam",
+    "client": "Primos Hunting",
+    "category": "Trail & Scouting Cameras",
+    "tagline": "Transforming the Past into the Future of Scouting",
+    "description": "Engineered with an ultra-simplified slide-switch user interface, eliminating complex menus so hunters can configure settings in seconds while wearing gloves.",
+    "coverImage": "https://assets.zyrosite.com/trail_cam_pic_f-A3QarKv1j2iNn9wz.jpg",
+    "tags": ["Hardware UI/UX", "Injection Molding", "Weatherproofing", "PIR Sensors"],
+    "highlights": [
+      "Tactile slide-switch mechanical programming",
+      "Fast 0.3s trigger recovery time",
+      "Modular mounting bracket design"
+    ]
+  },
+  {
+    "id": "primos-revolver-grunt",
+    "title": "Primos Revolver Grunt Call",
+    "client": "Primos Hunting",
+    "category": "Acoustic Game Calls",
+    "tagline": "Infinite Sound Versatility in a Single Handheld Device",
+    "description": "Revolutionary dial-selector acoustic call that shifts internal reed tensions smoothly from soft fawn bleats to deep trophy buck grunts.",
+    "coverImage": "https://assets.zyrosite.com/8cf8d130193573.56175e8d7c462-m5Klr53XMVCO65EL.jpg",
+    "tags": ["Acoustic Engineering", "Mechanism Design", "Ergonomics", "Polymer Tooling"],
+    "highlights": [
+      "Indexing click-stop rotary adjustment wheel",
+      "Tuned multi-position internal reed system",
+      "Shock-absorbing rubber armor shell"
+    ]
+  },
+  {
+    "id": "primos-dogg-catcher",
+    "title": "Primos Dogg Catcher Electronic Caller",
+    "client": "Primos Hunting",
+    "category": "Wireless Consumer Electronics",
+    "tagline": "High-Output Wireless Predator Calling System",
+    "description": "Compact electronic predator call with dual directional horn speakers and an integrated 150-yard RF wireless remote stored directly into the body.",
+    "coverImage": "https://assets.zyrosite.com/533d0d6f-76de-4dd4-9843-e0b96305afba_2.59f6038cb3f27f497b2749d896f9d463-m7V8w3WRxetD7xxo.jpeg",
+    "tags": ["RF Hardware", "Acoustic Horn Design", "Industrial Design", "Battery Packaging"],
+    "highlights": [
+      "Nested magnetic remote dock",
+      "Dual directional megaphone horn chambers",
+      "Rugged fold-out stabilizing legs"
+    ]
+  },
+  {
+    "id": "primos-rack-n-roll",
+    "title": "Primos Rack N Roll",
+    "client": "Primos Hunting",
+    "category": "Mechanical Calling Gear",
+    "tagline": "One-Handed Antler Rattling System",
+    "description": "Compact, quiet-carry mechanical rattling system that mimics authentic heavy antler clashes without the bulk or risk of full deer antlers.",
+    "coverImage": "https://assets.zyrosite.com/4b247820042939.5617ea3f51b0c-AVL31RaoVohaJq8Y.jpg",
+    "tags": ["Material Science", "Mechanical Design", "Portability"],
+    "highlights": [
+      "High-density resonance polymer rods",
+      "Silent transport compression strap",
+      "Single-hand rotating combat action"
+    ]
+  },
+  {
+    "id": "primos-rut-roar",
+    "title": "Primos Rut Roar",
+    "client": "Primos Hunting",
+    "category": "Acoustic Game Calls",
+    "tagline": "From Initial Napkin Sketch to Top-Selling Industry Call",
+    "description": "Ergonomic high-output grunt call with dual sound chambers, allowing intense aggressive buck roars and sharp challenge wheezes.",
+    "coverImage": "https://assets.zyrosite.com/e6c67d30172577.5616a61a2ae80-Yan6B3oXqgtoJjNk.jpg",
+    "tags": ["Acoustic Tuning", "CAD Surfacing", "Injection Tooling"],
+    "highlights": [
+      "Challenge wheeze side exhaust tube",
+      "Contoured comfort grip body profile"
+    ]
+  },
+  {
+    "id": "jelly-head-maximum",
+    "title": "JELLY HEAD™ MAXIMUM Choke Tube",
+    "client": "Primos Hunting",
+    "category": "Precision CNC Ballistics",
+    "tagline": "The Premier Choke Tube Engineered for Shot Pattern Density",
+    "description": "Precision 17-4 stainless steel shotgun choke tube with fluted porting to vent gas and minimize recoil while maintaining tight pellet clusters.",
+    "coverImage": "https://assets.zyrosite.com/jellyhead_in-use-mjEPvja0pyCQol9D.jpeg",
+    "tags": ["Precision CNC Milling", "17-4 Stainless Steel", "Ballistics", "Black-T Coating"],
+    "highlights": [
+      "Laser-etched extended knurled rim for tool-free installation",
+      "Proprietary multi-step taper constriction geometry",
+      "Black-T anti-glare, rustproof coating"
+    ]
+  },
+  {
+    "id": "primos-chicken-on-stick",
+    "title": "Primos Chicken on a Stick",
+    "client": "Primos Hunting",
+    "category": "Mechanism & Decoy Gear",
+    "tagline": "Gun-Mounted Decoy Deployment System",
+    "description": "Lightweight clamp-on fan decoy bracket with integrated camera tripod mount for active run-and-gun hunting setups.",
+    "coverImage": "https://assets.zyrosite.com/6142300c4eff5e87ab3397e1621541049161ca1d177c7-YX41akpx9MUXe7a8.jpg",
+    "tags": ["Mechanism Design", "Quick-Release Clamps", "Action Camera Mounts"],
+    "highlights": [
+      "Universal gun barrel and rail clamp interface",
+      "Collapsible quick-deploy tail holder",
+      "Vibration-isolated camera plate"
+    ]
+  },
+  {
+    "id": "primos-can-grip-rings",
+    "title": "Primos Can Grip Rings",
+    "client": "Primos Hunting",
+    "category": "Overmolding & Ergonomics",
+    "tagline": "Iconic Ergonomic Non-Slip Grip Enhancement",
+    "description": "Custom tactile raised rubber ribbing applied to the world-renowned 'The Original Can' acoustic bleat system for sure-handed operation in wet and sub-zero weather.",
+    "coverImage": "https://assets.zyrosite.com/maxresdefault-m2WBaBLx1wfeaoXM.jpg",
+    "tags": ["Elastomer Tooling", "Ergonomics", "Brand Icon"],
+    "highlights": [
+      "Dual-material thermal bonding",
+      "Freeze-proof actuation port"
+    ]
+  },
+  {
+    "id": "primos-varmint-hunting-light",
+    "title": "Primos Varmint Hunting Light",
+    "client": "Primos Hunting",
+    "category": "Tactical Illumination",
+    "tagline": "High-Lumen Rail & Scope Mount Predator Illumination",
+    "description": "High-intensity LED weapon-mounted illuminator featuring interchangeable red/green lenses and an extended remote pressure pad for night hunting.",
+    "coverImage": "https://assets.zyrosite.com/1_bsn62371_600-2-dOql4X141eSpaovw.jpg",
+    "tags": ["Optoelectronics", "Thermal Management", "CNC Aluminum", "IPX6"],
+    "highlights": [
+      "Aircraft-grade anodized aluminum body",
+      "Coil-cord momentary pressure switch",
+      "Quick-release 1-inch and 30mm scope clamp"
+    ]
+  }
+]
